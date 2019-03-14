@@ -29,6 +29,12 @@ namespace SimpleCollections
         }
 
         private ListNode _firstNode = null;
+        private int _length = 0;
+        public int Length
+        {
+            get { return _length; }
+            private set { _length = value; }
+        }
 
         //TODO: Implement Indexer this[int i]
 
@@ -51,14 +57,16 @@ namespace SimpleCollections
 
                 currentNode.NextNode = node;
             }
+            _length++;
+
             return item;
         }
 
         //TODO: Implement int Length()
-        public int Length()
-        {
-            throw new NotImplementedException();
-        }
+        //public int Length()
+        //{
+        //    return _length;
+        //}
 
         //TODO: Implement Object First()
         //TODO: Implement Object RemoveFirst()
