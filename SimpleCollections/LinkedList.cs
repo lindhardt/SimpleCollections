@@ -52,6 +52,11 @@ namespace SimpleCollections
             return item;
         }
 
+        public int Length()
+        {
+            throw new NotImplementedException();
+        }
+
         // Test Method remove before release
         public void PrintList()
         {
