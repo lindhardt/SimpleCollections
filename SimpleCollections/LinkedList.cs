@@ -30,6 +30,8 @@ namespace SimpleCollections
 
         private ListNode _firstNode = null;
 
+        //TODO: Implement Indexer this[int i]
+
         public Object Add(Object item)
         {
             var node = new ListNode();
@@ -52,10 +54,23 @@ namespace SimpleCollections
             return item;
         }
 
+        //TODO: Implement int Length()
         public int Length()
         {
             throw new NotImplementedException();
         }
+
+        //TODO: Implement Object First()
+        //TODO: Implement Object RemoveFirst()
+
+        //TODO: Implement Object Last()
+        //TODO: Implement Object RemoveLast()
+
+        //TODO: Implement Object InsertAfter(Object item, Object newItem)
+        //TODO: Implement Object InsertBefore(Object item, Object newItem)
+        //TODO: Implement Object Insert(int index, Object Item)
+
+        //TODO: Implement Object Remove(Object item)
 
         // Test Method remove before release
         public void PrintList()
